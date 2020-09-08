@@ -1,0 +1,35 @@
+.box1{
+	position: absolute;
+	background: #95FFD3FF;
+	width: 10vw;
+	height: 10vw;
+	left: 15%;
+	top: 35%;
+	display: block;
+}
+.box2{
+	position: absolute;
+	background: #95FFD3FF;
+	width: 10vw;
+	height: 10vw;
+	left: 45%;
+	top: 35%;
+	display: block;
+}
+.box3{
+	position: absolute;
+	background: #95FFD3FF;
+	width: 10vw;
+	height: 10vw;
+	left: 75%;
+	top: 35%;
+	display: block;
+}
+.button{
+	position: absolute;
+	left: 48%;
+	top: 65%;
+}
+a{
+	color: black
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            .login{
+                position: absolute;
+                margin-top: 40px;
+                margin-left: -110px;
+             }    
+        </style>
+        <body>
+                <button onclick="goBack()">Go Back</button>
+            
+            <p>username : "Johnny",
+                password : "1218"
+                username : "Jack",
+                password : "1219"
+                username : "Jeck",
+                password : "1220"</p>
+            <h1><b>Login</b></h1>
+            <p>Username</p>
+            <input type="text" name="username" id="username"/>
+            <p>Password</p>
+            <input type="password" name="password" id="password"/>
+            <button class = "login" onclick="click1()">Login</button>
+                <script>
+                    var objPeople = [{
+                        username : "Johnny",
+                        password : "19981218"
+                    },
+                    {
+                        username : "Jack",
+                        password : "1219"
+                    },
+                    {
+                        username : "Jeck",
+                        password : "1220"
+                    }   
+                    ]
+                    function click1() {
+                        var username = document.getElementById("username").value
+                        var password = document.getElementById("password").value
+                        for(i = 0; i < objPeople.length; i++){
+                            if(username == objPeople[i].username){
+                                if(password == objPeople[i].password){
+                                    alert("Амжилттай нэвтэрлээ")
+                                }  
+                                else if(username == objPeople[i].username){
+                                    if(password !== objPeople[i].password){
+                                        alert("password буруу")     
+                                   }   
+                               }    
+                            }
+                            else if(password == objPeople[i].password){
+                                   if(username !== objPeople[i].username){
+                                       alert("username буруу")
+                                   }
+                            
+                            }
+                        }
+                                
+                    }
+                     function goBack() {
+                          window.history.back();
+                        }
+                </script>
+
+        </body>
+    </head>
+</html>
