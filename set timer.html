@@ -9,9 +9,16 @@
 		height: 5vw;
 		background: gray;
 		padding: 5vw;
+		background: rgba(255,255,255,.5);
 	}
 	.set{
 		float: left;
+	}
+	body{
+		background: url(images/img1.jpg) center center / cover no-repeat;
+		width: 100%;
+		height: 100vh;
+		overflow-x: hidden;
 	}
 </style>
 <body>
@@ -25,6 +32,7 @@
 		seconds
 	</p>
 	<button onclick="setfunction()" class="set">Set timer</button>
+	</div>
 	<script>
 		const myInput = document.querySelector("input")	
 		let p = document.getElementsByClassName('p1')[0]
@@ -69,6 +77,6 @@
 		  window.history.back();
 		}
 	</script>
-</div>
+
 </body>
 </html>
